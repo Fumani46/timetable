@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="home.css"> -->
+    <!--  <div class="btn"><button><a href="updates.html" target="_blank">Updates/Announcements</a></button></div> -->
+
+    </style>
+</head>
+<body>
+
+
+<h1>TimeTable</h1>
+
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">courseId</th>
+            <th scope="col">LectureId</th>
+            <th scope="col">location</th>
+            <th scope="col">module_id</th>
+            <th scope="col">module_name</th>
+            <th scope="col">stream_link</th>
+            <th scope="col">uniqueID</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="student : ${courseModules}">
+            <th scope="row">1</th>
+            <td th:text="${student.course_id}"> </td>
+            <td th:text="${student.lect_id}"> </td>
+            <td th:text="${student.location}"> </td>
+            <td th:text="${student.module_id}"> </td>
+            <td th:text="${student.module_name}"> </td>
+            <td th:text="${student.stream_link}"> </td>
+            <td th:text="${student.uniqueID}"> </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+</body>
+</html>

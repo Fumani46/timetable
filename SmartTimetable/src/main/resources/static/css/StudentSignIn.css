@@ -1,0 +1,138 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+body{
+    margin: 0;
+    padding: 0;
+    background: url(/images/3d-desktop-computer-computer-mouse-wallpaper-preview.jpg);
+    background-size: cover;
+    background-position: centre;
+    font-family: sans-serif;
+}
+.login-box{
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top:50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.login-box #studentNo_error,
+.login-box #Password_error{
+    margin-top: 5px;
+    width: 345px;
+    font-size: 18px;
+    color: #C62828;
+    background:rgba(255,0,0,0.1);
+    text-align:centre;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #EF9A9A;
+    display: none;
+}
+.user-icon{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+position: absolute;
+top: -50px;
+left: calc(50% - 50px);
+}
+h1{
+margin: 0;
+padding: 0 0 20px;
+text-align: center;
+font-size: 22px;
+}
+.login-box p{
+margin: 0;
+padding: 0;
+font-weight: bold;
+}
+.login-box input{
+width: 100%;
+margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="Password"]{
+border: none;
+border-bottom: 1px solid #fff;
+background: transparent;
+outline: none;
+height: 40px;
+color:#fff;
+font-size: 16px;
+}
+.login-box input[type="submit"]{
+border: none;
+outline: none;
+height: 40px;
+background: #fb2525;
+color: #fff;
+font-size: 18px;
+border-radius: 20px;
+}
+.login-box input[type="submit"]:hover{
+cursor: pointer;
+background: #ffc107;
+color: #000;
+}
+.login-box a{
+text-decoration: none;
+font-size: 12px;
+line-height: 20px;
+color: darkgrey;
+}
+.login-box a:hover{
+color: #ffc107;
+}
+a {
+  text-decoration: none;
+}
+li a {
+  text-decoration: underline;
+  color: #0288d1;
+}
+.mdl-grid {
+  max-width: 1024px;
+  margin: auto;
+}
+.mdl-layout__header-row {
+  padding: 0;
+}
+.quickstart-user-details-container {
+  margin-top: 20px;
+  line-height: 25px;
+}
+#quickstart-sign-in-status {
+  font-weight: bold;
+}
+pre {
+  overflow-x: scroll;
+  line-height: 18px;
+}
+code {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+h3 {
+  background: url('firebase-logo.png') no-repeat;
+  background-size: 40px;
+  padding-left: 50px;
+  line-height: 40px;
+}
